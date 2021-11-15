@@ -81,7 +81,6 @@ h1 {
     font-size: x-large;
     color: black;
     margin-bottom: 0;
-s
 }
 
 .chocolate-heart,
@@ -214,7 +213,7 @@ footer {
 }
 
 @media screen and (max-width:500px) {
-    .links-and-button-in-footer{
+    .links-and-button-in-footer {
         max-width: 75%;
     }
 }
