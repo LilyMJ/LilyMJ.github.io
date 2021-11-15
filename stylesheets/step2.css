@@ -36,18 +36,18 @@ header {
 }
 
 .main-title {
-    display: flex;
+
     flex-direction: column;
     justify-content: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
+
+
 }
 
 @media screen and (max-width: 500px) {
     .main-title {
-        padding: 70px;
+        text-align: center;
+        padding: 0 50px 0 50px;
     }
 }
 
@@ -57,174 +57,86 @@ h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .main-title h2 {
     display: flex;
     justify-content: center;
     font-size: 21px;
-    font-weight: bold;
+    font-weight: normal;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.texte-of-article {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0px 40px 0;
-    align-items: flex-start;
-}
-
-@media screen and (max-width: 750px) {
-    .texte-of-article {
-        flex-direction: column;
-        padding-right: 35px;
-    }
-}
-
-.texte-of-article p {
-    color: #6E757C
-}
-
-.texte-of-aticle h4 {
-    font-family: roboto;
-}
-
-.text {
+.article-text {
     display: flex;
     flex-direction: column;
-    margin: 0 80px 0 0;
-
-}
-
-@media screen and (max-width: 750px) {
-    .text {
-        margin: 0;
-    }
-}
-
-.cakes-with-cream {
-    display: flex;
-    min-width: 50%;
-    max-width: 100%;
-
-}
-
-.bloc-newsletter {
-    background-color: #F5F5F5;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100px;
-}
-
-@media screen and (max-width: 750px) {
-    .bloc-newsletter {
-        padding: 0 50px 0 50px;
-    }
-}
-
-.bloc-newsletter p {
-    padding-right: 10px;
-}
-
-.button-newsletter,
-.button-learn-more {
-    background-color: #FDF3DB;
-    border: 1px solid #F2CB6C;
-    border-radius: 2px;
-    height: 30px;
-}
-
-.presentation-pastries {
-    display: flex;
-
-    margin-bottom: 50px;
-}
-
-@media screen and (max-width: 750px) {
-    .presentation-pastries {
-        flex-direction: column;
-    }
-}
-
-.presentation-pastries p {
-    color: #6E757C;
-}
-
-.maccaron-presentation,
-.round-pastrie-presentation {
-    margin-right: 120px;
-}
-
-
-@media screen and (max-width: 750px) {
-    .maccaron-presentation {
-        padding-bottom: 30px;
-    }
-
-    .maccaron-presentation,
-    .round-pastrie-presentation {
-        margin-right: 35px;
-    }
-}
-
-.icing-pastrie {
-    padding-right: 120px;
-}
-
-.text-feedback {
-    padding-left: 120px;
-    padding-right: 50px;
-}
-
-@media screen and (max-width: 750px) {
-    .text-feedback {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-
-.round-pastrie-presentation img,
-.maccaron-presentation img {
-    height: 170px;
-    width: 170px;
-    border-radius: 85px;
-}
-
-.feedback {
-    display: flex;
     justify-content: center;
     align-items: center;
+    color: #6E757C;
+    padding: 0 50px 0 35px;
+}
+
+.article-text h2:nth-of-type(1) {
+    font-size: x-large;
+    color: black;
+
+}
+
+.chocolate-heart,
+.ingredients,
+.sugar-heart {
+    display: flex;
+}
+
+.sugar-heart:nth-of-type(3) {
+    flex-direction: row-reverse;
+}
+
+.chocolate-heart {
+    padding-top: 70px;
 }
 
 @media screen and (max-width: 750px) {
-    .feedback {
+    .chocolate-heart {
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .chocolate-heart,
+    .ingredients,
+    .sugar-heart {
         flex-direction: column;
-        align-items: flex-start;
+    }
+
+    .sugar-heart:nth-of-type(3),
+    .ingredients:nth-of-type(2) {
+        flex-direction: column-reverse;
     }
 }
 
-.feedback img {
+.chocolate-heart img,
+.ingredients img,
+.sugar-heart img {
     box-sizing: border-box;
-    min-width: 50%;
-    max-width: 100%;
-    padding: 0 120px 0 20px;
+    max-width: 50%;
+    padding: 0 50px 0 35px;
+
 }
 
 @media screen and (max-width: 750px) {
-    .feedback img {
-        padding: 0 20px 0 20px;
+
+    .chocolate-heart img,
+    .ingredients img,
+    .sugar-heart img {
+        box-sizing: border-box;
+        max-width: 100%;
+        padding: 60px 50px 0 35px;
+
     }
-}
-
-.signature {
-    text-align: right;
-}
-
-.blue-block-feedback {
-    padding: 60px 35px 60px 35px;
-    background-color: #F5F5F5C4;
 }
 
 .links-in-footer {
@@ -299,6 +211,13 @@ footer {
     box-sizing: border-box;
     padding-left: 40px;
 
+}
+
+.button-newsletter {
+    background-color: #FDF3DB;
+    border: 1px solid #F2CB6C;
+    border-radius: 2px;
+    height: 30px;
 }
 
 @media screen and (max-width: 500px) {
