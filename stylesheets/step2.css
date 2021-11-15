@@ -73,15 +73,15 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     color: #6E757C;
     padding: 0 50px 0 35px;
 }
 
-.article-text h2:nth-of-type(1) {
+.article-text h2 {
     font-size: x-large;
     color: black;
-
+    margin-bottom: 0;
+s
 }
 
 .chocolate-heart,
@@ -211,6 +211,12 @@ footer {
     box-sizing: border-box;
     padding-left: 40px;
 
+}
+
+@media screen and (max-width:500px) {
+    .links-and-button-in-footer{
+        max-width: 75%;
+    }
 }
 
 .button-newsletter {
